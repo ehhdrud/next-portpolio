@@ -1,0 +1,56 @@
+import Animation from './Animation';
+import Link from 'next/link';
+
+export default function Home() {
+    return (
+        <section className="flex flex-col itmes-center justify-center min-h-screen text-gray-600 body-font">
+            <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <h1 className="title-font sm:text-4xl text-3xl mb-10 font-medium text-gray-900">
+                        느리더라도 완벽하게 아이디어를 실현하려는 개발자,
+                        <br className="hidden lg:inline-block" />
+                        서동경입니다
+                    </h1>
+                    <p className="mb-8 leading-relaxed">
+                        안녕하십니까! 프론트엔드 개발자 서동경입니다.
+                        <br />
+                        <br />
+                        전자공학과를 졸업하였지만,&nbsp;
+                        <Link
+                            href="https://colorful-liver-e8f.notion.site/02c85fdb4f4f479484aaada72755bcda?pvs=4"
+                            className="bg-gray-100 text-gray-500 dark:bg-gray-700 dark:text-gray-300 font-semibold p-1 rounded"
+                        >
+                            졸업 작품
+                        </Link>
+                        을 진행하며 코딩을 처음 접하며 혼자서도 무엇이든 만들 수 있고 여러 분야에
+                        도전할 수도 있는 개발자라는 직업이 매력적으로 느껴져 개발 공부를
+                        시작하였습니다. 평소 디자인에 관심이 많았던 이유로 프론트엔드 직군을 목표로
+                        공부 중입니다.
+                        <br />
+                        <br />
+                        언어와 라이브러리의 기본 원리를 최우선으로 여깁니다. 학습 시 이해하기
+                        까다로웠던 중요 원리나 문제 해결 과정은 블로그에 게시함으로써 좀 더 정확한
+                        정보를 토대로 내가 다시 쓴 글을 통해 이론을 이해하려고 노력하고 있습니다.
+                        <br />
+                        <br />
+                        완벽주의 성향을 가지고 있어 코드의 효율성과 통일성, UI/UX 등 다양한 측면에서
+                        프로젝트의 완성도를 높이는 것에 집착합니다. 또한 새로운 환경과 도전에
+                        거리낌이 없으며 팀원 간의 의견이 맞지 않는 커뮤니케이션 상황도 좋은 분위기로
+                        이끌어 갈 수 있는 능력이 있습니다.
+                    </p>
+                    <div className="flex justify-center">
+                        <Link
+                            href="/projects"
+                            className="inline-flex text-white dark:text-slate-100 bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                        >
+                            Go to see projects
+                        </Link>
+                    </div>
+                </div>
+                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                    <Animation />
+                </div>
+            </div>
+        </section>
+    );
+}
