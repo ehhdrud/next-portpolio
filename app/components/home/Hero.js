@@ -12,8 +12,8 @@ export default function Home() {
                         서동경입니다
                     </h1>
                     <div className="mb-8 leading-relaxed text-sm">
-                        <p className="mb-3">안녕하십니까! 프론트엔드 개발자 서동경입니다.</p>
-                        <p className="mb-3">
+                        <p className="mb-2">안녕하십니까! 프론트엔드 개발자 서동경입니다.</p>
+                        <p className="mb-2">
                             전자공학과를 졸업하였지만,&nbsp;
                             <Link
                                 href="https://colorful-liver-e8f.notion.site/02c85fdb4f4f479484aaada72755bcda?pvs=4"
@@ -26,24 +26,24 @@ export default function Home() {
                             시작하였습니다. 평소 디자인에 관심이 많았던 이유로 프론트엔드 직군을
                             목표로 공부 중입니다.
                         </p>
-                        <p className="mb-3">
+                        <p className="mb-2">
                             언어와 라이브러리의 기본 원리를 최우선으로 여기고 이를 최대한 기록하려고
                             노력합니다. 학습 시 이해하기 까다로웠던 중요 원리나 문제 해결 과정을
                             블로그에 게시함으로써 좀 더 정확한 정보를 토대로 내가 다시 쓴 글을 통해
                             이론을 정리하고 있습니다.
                         </p>
-                        <p className="mb-3">
+                        <p className="mb-2">
                             완벽주의 성향을 가지고 있어 코드의 효율성과 통일성, UI/UX 등 다양한
                             측면에서 프로젝트의 완성도를 높이는 것에 집착합니다. 그로 인해 프로젝트
                             마무리 과정에 오랜 시간을 할애하는 편이지만, 원하는 결과물을 얻는 것에
                             큰 기쁨을 느끼기 때문에 그 시간을 즐깁니다.
                         </p>
-                        <p className="mb-3">
+                        <p className="mb-2">
                             새로운 기술을 접하는 것이 프론트엔드 개발자로서 큰 성장을 도모한다고
                             믿고 있기에 이에 거리낌이 없고, 매 프로젝트에 다른 기술을 적용하려고
                             노력하였습니다.
                         </p>
-                        <p className="mb-3">
+                        <p className="mb-2">
                             정보를 전달하거나 의견이 맞지 않는 상황에서 상대방을 배려하는
                             커뮤니케이션에 능합니다. 협업 시 그러한 문제 상황을 좋은 분위기로 이끌어
                             원하는 결과물을 얻은 다수의 경험이 있습니다.
