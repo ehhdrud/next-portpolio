@@ -27,10 +27,7 @@ export default function Header() {
                     <Link href="/projects" className="mr-5 hover:text-gray-900">
                         Projects
                     </Link>
-                    <Link
-                        href="https://github.com/ehhdrud?tab=repositories"
-                        className="mr-5 hover:text-gray-900"
-                    >
+                    <Link href="https://github.com/ehhdrud" className="mr-5 hover:text-gray-900">
                         Github
                     </Link>
                     <Link href="https://velog.io/@ehhdrud" className="mr-5 hover:text-gray-900">
