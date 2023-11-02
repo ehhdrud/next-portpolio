@@ -18,7 +18,7 @@ export default function ProjectItem({ data }) {
     const description = data.properties.description.rich_text[0].plain_text;
     const imgSrc = data.cover.file?.url || data.cover.external.url;
     const tags = data.properties.tags.multi_select;
-    const detail = data.properties.detail.multi_select;
+    const detail = data.properties.detail.files;
     const skill = data.properties.skill.multi_select;
     const troubleshooting = data.properties.troubleshooting.files;
 

@@ -3,10 +3,7 @@
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-const Project = (props) => {
+const Project = () => {
     const params = useSearchParams();
 
     const title = params.get('title');
@@ -31,7 +28,6 @@ const Project = (props) => {
                     <p key={item.name}>{item.name}</p>
                 ))}
             </div>
-
             <div className="mb-6">
                 <h2 className="text-xl font-bold mb-2">⭐사용 기술</h2>
                 {skill.map((item) => (
