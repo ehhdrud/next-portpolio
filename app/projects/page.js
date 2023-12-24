@@ -1,5 +1,5 @@
 import { DATABASE_ID, TOKEN } from '../config/index';
-import ProjectItem from '../components/project/project-item';
+import ProjectItem from '../components/project/ProjectSummary';
 
 export default async function Projects() {
     const options = {
@@ -20,6 +20,7 @@ export default async function Projects() {
     );
 
     const projects = await staticData.json();
+    console.log(projects);
 
     return (
         <div className="flex items-center justify-center min-h-screen mb-10">
