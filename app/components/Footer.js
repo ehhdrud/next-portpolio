@@ -10,7 +10,7 @@ export default function Footer() {
                 >
                     <span className="ml-3 text-xl font-bold">SEO DONG KYEONG&apos;s Portpolio</span>
                 </Link>
-                <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+                <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-1 mt-4">
                     © 2023 All Rights reserved.
                 </p>
             </div>

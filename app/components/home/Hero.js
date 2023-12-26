@@ -31,7 +31,7 @@ export default function Home() {
                     <div className="flex justify-center">
                         <Link
                             href="/projects"
-                            className="inline-flex text-white dark:text-slate-100 bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                            className="inline-flex text-white hover:text-gray-100 dark:text-slate-100 bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                         >
                             Go to see projects
                         </Link>

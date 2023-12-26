@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function ProjectItem({ data }) {
+export default function ProjectSummary({ data }) {
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
@@ -38,12 +38,12 @@ export default function ProjectItem({ data }) {
                     }}
                 >
                     <div className="p-4 flex flex-col">
-                        <h1 className="text-2xl font-bold">{title}</h1>
-                        <h3 className="mt-4 text-xl">{description}</h3>
-                        <div className="flex items-start mt-2">
+                        <h1 className="text-xl sm:text-2xl font-bold">{title}</h1>
+                        <h3 className="mt-4 text-md sm:text-lg">{description}</h3>
+                        <div className="flex items-start flex-wrap mt-2">
                             {tags.map((aTag) => (
                                 <div
-                                    className="px-2 py-1 mr-2 rounded-md bg-sky-200 dark:bg-sky-700 w-30 text-slate-900 dark:text-white"
+                                    className="px-2 py-1 mr-2 rounded-md bg-sky-200 dark:bg-sky-700 text-slate-900 dark:text-white text-xs sm:text-lg"
                                     key={aTag.id}
                                 >
                                     {aTag.name}

@@ -1,5 +1,5 @@
 import { DATABASE_ID, TOKEN } from '../config/index';
-import ProjectItem from '../components/project/ProjectSummary';
+import ProjectSummary from '../components/project/ProjectSummary';
 
 export default async function Projects() {
     const options = {
@@ -26,7 +26,7 @@ export default async function Projects() {
         <div className="flex items-center justify-center min-h-screen mb-10">
             <div className="flex flex-col items-center justify-center gap-8 m-4">
                 {projects.results.map((aProject) => (
-                    <ProjectItem key={aProject.id} data={aProject} />
+                    <ProjectSummary key={aProject.id} data={aProject} />
                 ))}
             </div>
         </div>

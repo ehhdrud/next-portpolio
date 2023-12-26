@@ -13,18 +13,41 @@ export default function ProjectA() {
     ];
     return (
         <div className="project flex flex-col gap-10">
-            <p className="mt-8">
-                웨이트 트레이닝 루틴의 점진적 과부하를 위한 운동 일지로, 현존하는 운동 일지 앱에는
-                존재하지 않는 '운동별로 설정할 수 있는 휴식 시간 타이머' 기능을 구현한
-                프로젝트입니다.
-            </p>
+            <div>
+                <h2 className="text-xl font-bold mb-2 mt-10">⭐ 프로젝트 설명</h2>
+                <p className="mb-4">
+                    웨이트 트레이닝 루틴의 점진적 과부하를 위한 운동 일지로, 현존하는 운동 일지
+                    앱에는 존재하지 않는 '운동별로 설정할 수 있는 휴식 시간 타이머' 기능을 구현한
+                    프로젝트입니다.
+                </p>
+                <div className="flex">
+                    <Link
+                        href="https://github.com/ehhdrud/workout-log-for-overload"
+                        className="w-fit text-sm bg-indigo-400 dark:bg-indigo-600 hover:bg-indigo-600 hover:dark:bg-indigo-800 rounded-md px-2 py-1 mx-1 text-gray-50 hover:text-gray-50 dark:text-white shadow-md shadow-slate-400 dark:shadow-slate-900"
+                    >
+                        GitHub <strong>→</strong>
+                    </Link>
+                    <Link
+                        href="workout-log-for-overload.vercel.app"
+                        className="w-fit text-sm bg-indigo-400 dark:bg-indigo-600 hover:bg-indigo-600 hover:dark:bg-indigo-800 rounded-md px-2 py-1 mx-1 text-gray-50 hover:text-gray-50 dark:text-white shadow-md shadow-slate-400 dark:shadow-slate-900"
+                    >
+                        Vercel <strong>→</strong>
+                    </Link>
+                    <Link
+                        href="https://youtu.be/iU5sZAEP5Jk"
+                        className="w-fit text-sm bg-indigo-400 dark:bg-indigo-600 hover:bg-indigo-600 hover:dark:bg-indigo-800 rounded-md px-2 py-1 mx-1 text-gray-50 hover:text-gray-50 dark:text-white shadow-md shadow-slate-400 dark:shadow-slate-900"
+                    >
+                        Youtube <strong>→</strong>
+                    </Link>
+                </div>
+            </div>
 
             <div>
                 <h2 className="text-xl font-bold mb-2">💡 주요 구현 내용</h2>
                 <div className="detail-container flex flex-col">
                     {details.map((detail, index) => (
                         <div className="mb-3" key={`details-${index}`}>
-                            - {detail}
+                            ◽ {detail}
                         </div>
                     ))}
                 </div>
@@ -46,39 +69,16 @@ export default function ProjectA() {
                 <h2 className="text-xl font-bold mb-2">📜 관련 블로그 글</h2>
                 <div className="blog-link-container flex flex-col">
                     <Link href="https://velog.io/@ehhdrud/Web-Worker%EB%A5%BC-%EC%A0%81%EC%9A%A9%ED%95%98%EB%A9%B4%EC%84%9C-%EA%B2%AA%EC%9D%80-%EB%AC%B8%EC%A0%9C">
-                        - Web Worker를 적용하면서 겪은 문제 🔍
+                        ◽ Web Worker를 적용하면서 겪은 문제 🔍
                     </Link>
                     <Link href="https://velog.io/@ehhdrud/Nextjs%EC%97%90%EC%84%9C-%EC%9B%B9-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C-%EB%B0%9C%EC%83%9D%ED%95%98%EB%8A%94-%EB%AC%B8%EC%A0%9C">
-                        - Next.js에서 웹 스토리지를 사용할 때 발생하는 문제 🔍
+                        ◽ Next.js에서 웹 스토리지를 사용할 때 발생하는 문제 🔍
                     </Link>
                     <Link href="https://velog.io/@ehhdrud/%EC%83%81%EC%9C%84-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%97%90%EC%84%9C-%ED%95%98%EC%9C%84-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%9D%98-%ED%95%A8%EC%88%98%EC%97%90-%EC%A0%91%EA%B7%BC%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95">
-                        - 상위 컴포넌트에서 하위 컴포넌트의 함수에 접근 🔍
+                        ◽ 상위 컴포넌트에서 하위 컴포넌트의 함수에 접근 🔍
                     </Link>
                     <Link href="https://velog.io/@ehhdrud/current%EA%B0%80-%ED%95%AD%EC%83%81-%EB%A7%88%EC%A7%80%EB%A7%89-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EC%B0%B8%EC%A1%B0%ED%95%98%EB%8A%94-%EB%AC%B8%EC%A0%9C">
-                        - 동적으로 렌더링되는 컴포넌트에 Ref를 설정할 때 주의점 🔍
-                    </Link>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <Link
-                        href="https://github.com/ehhdrud/workout-log-for-overload"
-                        className=" bg-gray-400 hover:bg-gray-500 rounded-lg px-2 py-1 mx-1 text-gray-50 font-bold dark:text-white"
-                    >
-                        GitHub
-                    </Link>
-                    <Link
-                        href="workout-log-for-overload.vercel.app"
-                        className="bg-blue-700 hover:bg-blue-800 rounded-lg px-2 py-1 mx-1 text-gray-50 font-bold dark:text-white"
-                    >
-                        Vercel
-                    </Link>
-                    <Link
-                        href="https://youtu.be/iU5sZAEP5Jk"
-                        className="bg-red-400 hover:bg-red-500 rounded-lg px-2 py-1 mx-1 text-gray-50 font-bold dark:text-white"
-                    >
-                        Youtube
+                        ◽ 동적으로 렌더링되는 컴포넌트에 Ref를 설정할 때 주의점 🔍
                     </Link>
                 </div>
             </div>
