@@ -33,10 +33,14 @@ export default function ProjectB() {
 
     const details = [
         'axios, async/await를 통해 REST API에 접근하여 데이터를 CRUD 하고, 해당 데이터를 Recoil을 통해 관리하였습니다. 해당 과정을 통해 AJAX 및 HTTP 통신과 전역 상태 관리에 대한 숙련도를 익혔습니다.',
-        'React Query의 useInfiniteQuery를 통해 크롤링 동영상에 대한 무한스크롤을 구현하였습니다. 이를 통해 응답받은 동영상을 5분간 캐시에서 관리하여 애플리케이션의 렌더링 효율을 향상시켰습니다.',
-        'Kakao Map API와 Geolocation API를 통해 지도와 위치 설정 기능 구현하였습니다. 주변 사용자를 조회할 때, 3km 범위에 한정함으로써 매 요청마다 적정량의 데이터를 응답받았습니다.',
-        'Quill을 통해 게시판 에디터를 구현하고, 첨부할 이미지는 AWS S3를 통해 base64 포맷이 아닌 URL 포맷으로 저장 하였습니다. 이를 통해 서버가 이미지를 관리하기 위한 부하를 감소시켰습니다.',
-        '게시글 정보를 가져올 때, dompurify 라이브러리를 통한 Sanitize 과정을 거치도록 하여 XSS 위험을 방지하였습니다. 추가적으로 CSRF에 대해서도 이해하고 해결 방법에 대해 학습하였습니다.',
+        '데이터를 Recoil에서 따로 관리하여 Props drilling 없이 데이터를 주고 받았고 recoil-persist를 통해 Session storage에 저장함으로써 지속적 접근이 가능하도록 하였습니다.',
+        "'운동 정보' 페이지에서 React-Query의 useInfiniteQuery를 통해 크롤링한 동영상에 대한 무한스크롤을 구현하였습니다. 응답받은 동영상은 5분간 캐시에 저장하여 렌더링 효율을 개선하였습니다. ('북마크' 페이지에 저장된 동영상에도 무한스크롤과 캐싱을 적용.) ",
+        'Kakao Map API와 Geolocation API를 통해 지도를 불러오고, 키워드로 위치를 검색하는 기능과 현재 위치나 특정 위치의 위도/경도를 반환받아 위치를 설정 기능을 구현하였습니다.  지도 클릭 없이 위치 설정 아이콘을 클릭할 경우에는 현재 위치에 마커를 표시하고, 지도의 특정 위치를 클릭한 후 아이콘 클릭할 경우 해당 위치에 마커를 표시하였습니다.',
+        '주변 사용자를 조회할 때 마커 기준 3km 범위에 한정함으로써 각 요청마다 적정량의 주변 사용자 데이터를 응답받았습니다. 주변 사용자의 위도와 경도를 상태로 저장하여 지도 상에 다른 사용자의 마커를 표시하고 해당 마커를 클릭하여 메이트 요청을 보낼 수 있도록 구현하였습니다.',
+        'Quill을 통해 게시판 에디터를 구현하였습니다. 이미지를 첨부할 경우, Amazon S3를 통해 base64 포맷이 아닌 URL 포맷으로 이미지를 저장하여 이미지 관리를 위한 서버 부하를 감소시켰습니다.',
+        '한번에 모든 게시글을 불러와 페이지당 10개의 게시글을 보여주는 프론트엔드 측 페이지네이션 방식을 Path variable, Query parameter을 통해 서버에서 페이지 당 10개의 게시글을 불러오는 백엔드 측 페이지네이션 방식으로 변경하여 렌더링 효율 및 메모리 효율을 개선하였습니다. ',
+        '메이트만 볼 수 있는 게시글로 설정할 수 있는 기능을 추가하였습니다. ‘Mate only’ 게시글에 접근 시 메이트 여부를 반환받아서 권한을 확인하여, 본인 또는 메이트만 접근 권한이 있도록 설계하였습니다.',
+        '게시글 정보를 가져올 때, dompurify 라이브러리를 통한 Sanitize 과정을 거치도록 하여 XSS 위험을 방지하였고, 추가적으로 CSRF에 대해서 이해하고 해결 방법에 대해 학습하였습니다.',
     ];
     return (
         <div className="project flex flex-col gap-10">
@@ -109,6 +113,30 @@ export default function ProjectB() {
                     >
                         Youtube <strong>→</strong>
                     </Link>
+                </div>
+            </div>
+
+            <div className="flex flex-col">
+                <h2 className="text-xl font-bold mb-5">🖼 관련 이미지</h2>
+                <div className="flex items-center flex-col gap-8">
+                    <ImgBox
+                        src={'/Image/B_FitTogether_운동정보&북마크_시퀀스다이어그램_캡처본.PNG'}
+                        description={"시퀀스 다이어그램 - '운동 정보' & '북마크'"}
+                        width={850}
+                        height={850}
+                    />
+                    <ImgBox
+                        src={'/Image/B_FitTogether_운동메이트찾기_시퀀스다이어그램_캡처본.PNG'}
+                        description={"시퀀스 다이어그램 - '운동 메이트 찾기'"}
+                        width={850}
+                        height={850}
+                    />
+                    <ImgBox
+                        src={'/Image/B_FitTogether_커뮤니티_시퀀스다이어그램_캡처본.PNG'}
+                        description={"시퀀스 다이어그램 - '커뮤니티'"}
+                        width={850}
+                        height={850}
+                    />
                 </div>
             </div>
 

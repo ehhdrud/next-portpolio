@@ -6,10 +6,11 @@ import ImgBox from './ImgBox';
 
 export default function ProjectA() {
     const details = [
-        'Next.js의 SSR 방식을 통해 CSR의 초기 로딩 속도, 검색 엔진 최적화 문제를 개선하고, PageSpeed 권장 사항을 준수하여 여러가지 렌더링 관련 문제들을 해결하였습니다 . 그 결과 CSR 방식으로만 진행한 프로젝트에 비해 월등히 높은 Performance 점수를 받았습니다.',
-        'Firebase Auth를 통해 로그인/회원가입을 구현하고, Recoil을 사용해 사용자 정보를 관리하였습니다. Recoil-Persist를 통해 Session-Storeage에 사용자 정보를 저장하여 유연한 데이터 접근을 가능하게 하는 동시에 새로고침 시에도 데이터가 유지되도록 하였습니다. 사용자 인스턴스의 지속성도 Session에서 관리하도록 설정하여 브라우저 종료 시 사용자 인스턴스가 삭제되도록 하여 보안을 신경썼습니다.',
-        'Firebase Cloud Firestore 에서 운동 데이터를 CRUD하는 방식으로 서버리스로 데이터를 구축하였습니다. 백엔드가 설계한 REST API에 요청을 보내 데이터를 넘겨받을 때보다 데이터의 구조에 대해 더 깊히 생각해볼 수 있는 계기가 되었습니다.',
-        'Web Worker를 통해 타이머가 main thread가 아닌 worker thread에서 동작하도록 구현하였습니다. 이로 인해 운동 중 다른 탭으로 이동하거나 브라우저를 백그라운드 상태에 두더라도 타이머가 계속 동작하도록 하여 UX를 개선하였습니다.',
+        'Next.js의 SSR 방식을 통해 초기 로딩 속도와 검색 엔진 최적화 문제 해결하고 함수 호출을 통한 Lazy Loading, 메모이제이션 기술을 사용하여 렌더링 성능을 추가 개선하였습니다. (PageSpeeds Insight의 성능 점수 80~90점대에서 95~100점으로 향상)',
+        'Firebase Auth를 통한 Google, Email에 대한 로그인을 구현하였습니다. 사용자 인스턴스의 지속성을 Session으로 설정하여 브라우저 종료 시 권한이 사라지도록 하였습니다. 사용자 정보 데이터는 Recoil에 저장하여 여러 컴포넌트에서 접근하기 용이하도록 하였고, 마찬가지로 recoil-persist를 통해 Session storeage에 저장함으로써 새로고침 시에도 데이터가 유지되면서 사용자 인스턴스와 동일한 생명주기를 갖도록 하였습니다.',
+        '운동 데이터를 CRUD하기 위한 데이터베이스로 Realtime Database와 Cloud Firestore를 고민하였습니다. 깊이있는 데이터를 저장하면서 하위 값은 반환받을 필요가 없었기 때문에 문서 컬렉션 데이터 형식을 가지는 Cloud Firestore를 선택하였습니다.',
+        'Web Worker를 통해 타이머가 Main thread가 아닌 Worker thread에서 동작하도록 구현하여 운동 중 다른 탭으로 이동하거나 브라우저를 백그라운드 상태에 두더라도 타이머가 계속 동작하도록 UX를 개선하였습니다.',
+        '설정된 타이머를 누르면 타이머 ON/OFF되고 Reps 입력을 마칠 때도 타이머가 작동합니다. 그러나 각 운동 별 마지막 Reps 입력 완료 시에는 해당 쉬는 시간을 적용하지 않으므로 타이머가 작동하지 않도록 설계하여 사용성을 높혔습니다.',
     ];
     return (
         <div className="project flex flex-col gap-10">
@@ -42,6 +43,24 @@ export default function ProjectA() {
                 </div>
             </div>
 
+            <div className="flex flex-col">
+                <h2 className="text-xl font-bold mb-5">🖼 관련 이미지</h2>
+                <div className="flex items-center flex-col gap-8">
+                    <ImgBox
+                        src={'/Image/A_workout-log-for-overload_시퀀스다이어그램_캡처본.PNG'}
+                        description={'시퀀스 다이어그램'}
+                        width={850}
+                        height={850}
+                    />
+                    <ImgBox
+                        src={'/Image/A_PSI_최종.PNG'}
+                        description={'렌더링 성능 개선 후 PageSpeed Insights 성능 점수'}
+                        width={850}
+                        height={850}
+                    />
+                </div>
+            </div>
+
             <div>
                 <h2 className="text-xl font-bold mb-2">💡 주요 구현 내용</h2>
                 <div className="detail-container flex flex-col">
@@ -50,18 +69,6 @@ export default function ProjectA() {
                             ◽ {detail}
                         </div>
                     ))}
-                </div>
-            </div>
-
-            <div className="flex flex-col">
-                <h2 className="text-xl font-bold mb-5">🖼 스크린샷</h2>
-                <div className="flex items-center">
-                    <ImgBox
-                        src={'/Image/A_PSI_최종.PNG'}
-                        description={'PageSpeed Insight 렌더링 개선 후 점수'}
-                        width={600}
-                        height={600}
-                    />
                 </div>
             </div>
 
