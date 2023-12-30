@@ -18,8 +18,8 @@ export default function ProjectA() {
                 <h2 className="text-xl font-bold mb-2 mt-10">⭐ 프로젝트 설명</h2>
                 <p className="mb-4">
                     웨이트 트레이닝 루틴의 점진적 과부하를 위한 운동 일지로, 현존하는 운동 일지
-                    앱에는 존재하지 않는 '운동별로 설정할 수 있는 휴식 시간 타이머' 기능을 구현한
-                    프로젝트입니다.
+                    앱에는 존재하지 않는 <i>운동별로 설정할 수 있는 휴식 시간 타이머</i> 기능을
+                    구현한 프로젝트입니다.
                 </p>
                 <div className="flex">
                     <Link
