@@ -24,7 +24,7 @@ export default function ProjectSummary({ data }) {
                     className="rounded-l-xl"
                     src={imgSrc}
                     alt="cover image"
-                    width={100}
+                    width={50}
                     height={100}
                     quality={100}
                 />
@@ -37,13 +37,13 @@ export default function ProjectSummary({ data }) {
                         },
                     }}
                 >
-                    <div className="p-4 flex flex-col">
+                    <div className="p-4 pb-1 flex flex-col">
                         <h1 className="text-xl sm:text-2xl font-bold">{title}</h1>
                         <h3 className="mt-4 text-md sm:text-lg">{description}</h3>
                         <div className="flex items-start flex-wrap mt-2">
                             {tags.map((aTag) => (
                                 <div
-                                    className="px-2 py-1 mr-2 rounded-md bg-sky-200 dark:bg-sky-700 text-slate-900 dark:text-white text-xs sm:text-lg"
+                                    className="px-2 py-1 mr-2 mb-2 rounded-md bg-sky-200 dark:bg-sky-700 text-slate-900 dark:text-white text-xs sm:text-lg"
                                     key={aTag.id}
                                 >
                                     {aTag.name}

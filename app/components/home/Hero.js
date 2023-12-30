@@ -4,10 +4,10 @@ import Link from 'next/link';
 export default function Home() {
     return (
         <section className="flex flex-col itmes-center justify-center min-h-screen text-gray-600 body-font">
-            <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div className="container mx-auto flex lg:px-5 xl:px-24 py-24 md:flex-row flex-col items-center">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 className="title-font sm:text-3xl text-2xl mb-10 font-medium text-gray-900">
-                        느리더라도 완벽하게 아이디어를 실현하려는 개발자,
+                        느리더라도 완벽하게 아이디어를 실현하려는 개발자,&nbsp;
                         <br className="hidden lg:inline-block" />
                         서동경입니다
                     </h1>
