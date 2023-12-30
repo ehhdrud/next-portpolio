@@ -102,7 +102,7 @@ export default function ProjectB() {
                         GitHub <strong>→</strong>
                     </Link>
                     <Link
-                        href="fit-together.vercel.app"
+                        href="https://fit-together.vercel.app/"
                         className="text-sm bg-indigo-400 dark:bg-indigo-600 hover:bg-indigo-600 hover:dark:bg-indigo-800 rounded-md px-2 py-1 mx-1 text-gray-50 hover:text-gray-50 dark:text-white shadow-md shadow-slate-400 dark:shadow-slate-900"
                     >
                         Vercel <strong>→</strong>
