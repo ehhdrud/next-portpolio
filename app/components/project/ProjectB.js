@@ -32,7 +32,7 @@ export default function ProjectB() {
     ];
 
     const details = [
-        'axios, async/await를 통해 REST API에 접근하여 데이터를 CRUD 하고, 해당 데이터를 Recoil을 통해 관리하였습니다. 해당 과정을 통해 AJAX 및 HTTP 통신과 전역 상태 관리에 대한 숙련도를 익혔습니다.',
+        'axios, async/await를 사용한 비동기 AJAX 통신을 통해 데이터를 CRUD하였습니다.',
         '데이터를 Recoil에서 따로 관리하여 Props drilling 없이 데이터를 주고 받았고 recoil-persist를 통해 Session storage에 저장함으로써 지속적 접근이 가능하도록 하였습니다.',
         "'운동 정보' 페이지에서 React-Query의 useInfiniteQuery를 통해 크롤링한 동영상에 대한 무한스크롤을 구현하였습니다. 응답받은 동영상은 5분간 캐시에 저장하여 렌더링 효율을 개선하였습니다. ('북마크' 페이지에 저장된 동영상에도 무한스크롤과 캐싱을 적용.) ",
         'Kakao Map API와 Geolocation API를 통해 지도를 불러오고, 키워드로 위치를 검색하는 기능과 현재 위치나 특정 위치의 위도/경도를 반환받아 위치를 설정 기능을 구현하였습니다.  지도 클릭 없이 위치 설정 아이콘을 클릭할 경우에는 현재 위치에 마커를 표시하고, 지도의 특정 위치를 클릭한 후 아이콘 클릭할 경우 해당 위치에 마커를 표시하였습니다.',
