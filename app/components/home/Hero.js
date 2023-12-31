@@ -7,9 +7,7 @@ export default function Home() {
             <div className="container mx-auto flex lg:px-5 xl:px-24 py-24 md:flex-row flex-col items-center">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 className="title-font sm:text-3xl text-2xl mb-10 font-medium text-gray-900">
-                        느리더라도 완벽하게 아이디어를 실현하려는 개발자,&nbsp;
-                        <br className="hidden lg:inline-block" />
-                        서동경입니다
+                        안녕하세요, <strong>서동경</strong>입니다 😄
                     </h1>
                     <div className="mb-8 leading-relaxed text-m">
                         <p className="mb-2 text-slate-600 dark:text-slate-400">

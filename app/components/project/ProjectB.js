@@ -33,7 +33,7 @@ export default function ProjectB() {
 
     const details = [
         'axios, async/await를 사용한 비동기 통신을 통해 데이터를 CRUD하였습니다.',
-        '데이터를 Recoil에서 따로 관리하여 Props drilling 없이 데이터를 주고 받았고 recoil-persist를 통해 Session storage에 저장함으로써 지속적 접근이 가능하도록 하였습니다.',
+        '데이터를 Recoil로 관리하여 Props drilling 없이 데이터를 주고 받았고 recoil-persist를 통해 Session storage에 저장함으로써 지속적 접근이 가능하도록 하였습니다.',
         "'운동 정보' 페이지에서 React-Query의 useInfiniteQuery를 통해 크롤링한 동영상에 대한 무한스크롤을 구현하였습니다. 응답받은 동영상은 5분간 캐시에 저장하여 렌더링 효율을 개선하였습니다. ('북마크' 페이지에 저장된 동영상에도 무한스크롤과 캐싱을 적용.) ",
         'Kakao Map API와 Geolocation API를 통해 지도를 불러오고, 키워드로 위치를 검색하는 기능과 현재 위치나 특정 위치의 위도/경도를 반환받아 위치를 설정 기능을 구현하였습니다.  지도 클릭 없이 위치 설정 아이콘을 클릭할 경우에는 현재 위치에 마커를 표시하고, 지도의 특정 위치를 클릭한 후 아이콘 클릭할 경우 해당 위치에 마커를 표시하였습니다.',
         '주변 사용자를 조회할 때 마커 기준 3km 범위에 한정함으로써 각 요청마다 적정량의 주변 사용자 데이터를 응답받았습니다. 주변 사용자의 위도와 경도를 상태로 저장하여 지도 상에 다른 사용자의 마커를 표시하고 해당 마커를 클릭하여 메이트 요청을 보낼 수 있도록 구현하였습니다.',
@@ -87,11 +87,11 @@ export default function ProjectB() {
                     <p>
                         아래 기능의 프론트엔드 구현을 담당하였습니다. <br />◽ 카테고리 별 동영상을
                         제시하는 <strong>운동 정보</strong>와 해당 동영상을 개인 저장하는{' '}
-                        <strong>북마크</strong> <strong>(100%)</strong> <br />◽ 지도에서 위치를
-                        지정하고 해당 위치의 주변 사용자를 조회하여 메이트 요청을 보내는{' '}
-                        <strong>운동 메이트 찾기</strong> <strong>(80%)</strong>
+                        <strong>북마크</strong> (100%) <br />◽ 지도에서 위치를 지정하고 해당 위치의
+                        주변 사용자를 조회하여 메이트 요청을 보내는{' '}
+                        <strong>운동 메이트 찾기</strong> (80%)
                         <br />◽ 게시글 CRUD, 게시글에 대한 좋아요/댓글, 게시글 필터링 등이 가능한{' '}
-                        <strong>커뮤니티</strong> <strong>(100%)</strong>
+                        <strong>커뮤니티</strong> (100%)
                     </p>
                 </div>
                 <div>
