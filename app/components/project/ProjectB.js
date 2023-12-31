@@ -82,7 +82,7 @@ export default function ProjectB() {
                 <div className="mb-4">
                     <p className="mb-3">
                         가까운 위치의 운동 메이트를 찾아주고 유저들 간 정보를 공유할 수 있도록 하는
-                        플랫폼인 FitTogether입니다.
+                        플랫폼입니다.
                     </p>
                     <p>
                         아래 기능의 프론트엔드 구현을 담당하였습니다. <br />◽ 카테고리 별 동영상을
