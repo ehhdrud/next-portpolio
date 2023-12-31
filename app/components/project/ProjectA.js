@@ -8,7 +8,7 @@ export default function ProjectA() {
     const details = [
         'Next.js의 SSR 방식을 통해 초기 로딩 속도와 검색 엔진 최적화 문제 해결하고 함수 호출을 통한 Lazy Loading, 메모이제이션 기술을 사용하여 렌더링 성능을 추가 개선하였습니다. (PageSpeeds Insight의 성능 점수 80~90점대에서 95~100점으로 향상.)',
         'Firebase Auth를 통한 Google, Email에 대한 로그인을 구현하였습니다. 사용자 인스턴스의 지속성을 Session으로 설정하여 브라우저 종료 시 권한이 사라지도록 하였습니다. 사용자 정보 데이터는 Recoil에 저장하여 여러 컴포넌트에서 접근하기 용이하도록 하였고, 마찬가지로 recoil-persist를 통해 Session storeage에 저장함으로써 새로고침 시에도 데이터가 유지되면서 사용자 인스턴스와 동일한 생명주기를 갖도록 하였습니다.',
-        '운동 데이터를 CRUD하기 위한 데이터베이스로 Realtime Database와 Cloud Firestore를 고민하였습니다. 깊이있는 데이터를 저장하면서 하위 값은 반환받을 필요가 없었기 때문에 문서 컬렉션 데이터 형식을 가지는 Cloud Firestore를 선택하였습니다.',
+        '운동 데이터 CRUD를 데이터베이스로 Realtime Database와 Cloud Firestore를 고민하였습니다. 깊이있는 데이터를 저장하면서 하위 값은 반환받을 필요가 없었기 때문에 문서 컬렉션 데이터 형식을 가지는 Cloud Firestore를 선택하였습니다.',
         'Web Worker를 통해 타이머가 Main thread가 아닌 Worker thread에서 동작하도록 구현하여 운동 중 다른 탭으로 이동하거나 브라우저를 백그라운드 상태에 두더라도 타이머가 계속 동작하도록 UX를 개선하였습니다.',
         '설정된 타이머를 누르면 타이머 ON/OFF되고 Reps 입력을 마칠 때도 타이머가 작동합니다. 그러나 각 운동 별 마지막 Reps 입력 완료 시에는 해당 쉬는 시간을 적용하지 않으므로 타이머가 작동하지 않도록 설계하여 사용성을 높혔습니다.',
     ];
