@@ -42,7 +42,7 @@ export default function ProjectA() {
                     <p className="ml-4">
                         - 각 운동의 마지막 세트를 수정할 때는 TIMER가 동작하지 않는다.
                     </p>
-                    <p>5. 타이머 종료 시 "TIME OUT" 메시지와 알림음이 출력된다.</p>
+                    <p>5. 타이머 종료 시 TIMEOUT 메시지와 알림음이 출력된다.</p>
                 </div>
                 <div className="flex">
                     <Link
