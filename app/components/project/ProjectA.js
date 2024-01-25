@@ -14,13 +14,36 @@ export default function ProjectA() {
     ];
     return (
         <div className="project flex flex-col gap-10">
-            <div>
+            <div className="mb-2">
                 <h2 className="text-xl font-bold mb-2 mt-10">⭐ 프로젝트 설명</h2>
                 <p className="mb-4">
                     웨이트 트레이닝 루틴의 점진적 과부하를 위한 운동 일지로, 현존하는 운동 일지
                     앱에는 존재하지 않는 <i>운동별로 설정할 수 있는 휴식 시간 타이머</i> 기능을
                     구현한 프로젝트입니다.
                 </p>
+                <div className="flex flex-col gap-1 mb-4">
+                    <p>1. 회원가입 후 로그인한다.</p>
+                    <p className="ml-4">
+                        - 아이디: <i>test@test.com</i> 비밀번호: <i>574384</i>
+                    </p>
+                    <p>2. 하루 단위의 루틴을 생성한다.</p>
+                    <p>
+                        3. 생성한 루틴에서 여러 운동을 생성하고 SETS, WEIGHT, REPS, TIMER을
+                        세팅한다.
+                    </p>
+                    <p className="ml-4">
+                        - 설정한 운동 정보는 데이터베이스에 저장되므로 지속적으로 관리할 수 있다.
+                    </p>
+                    <p>
+                        4. REPS를 수정할 때 마다 TIMER가 자동으로 실행된다. 설정되어 있는 숫자를
+                        클릭해도 실행된다.
+                    </p>
+                    <p className="ml-4">- TIMER는 선택적으로 사용 가능한 기능이다.</p>
+                    <p className="ml-4">
+                        - 각 운동의 마지막 세트를 수정할 때는 TIMER가 동작하지 않는다.
+                    </p>
+                    <p>5. 타이머 종료 시 "TIME OUT" 메시지와 알림음이 출력된다.</p>
+                </div>
                 <div className="flex">
                     <Link
                         href="https://github.com/ehhdrud/workout-log-for-overload"
@@ -40,6 +63,13 @@ export default function ProjectA() {
                     >
                         Youtube <strong>→</strong>
                     </Link>
+                </div>
+            </div>
+
+            <div>
+                <h2 className="text-xl font-bold mb-2">⏳ 개발 기간</h2>
+                <div className="mb-4">
+                    <i>2023.09 - 2023.11</i>
                 </div>
             </div>
 

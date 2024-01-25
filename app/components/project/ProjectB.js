@@ -77,7 +77,7 @@ export default function ProjectB() {
                 </div>
             </div>
 
-            <div>
+            <div className="mb-2">
                 <h2 className="text-xl font-bold mb-2">⭐ 프로젝트 설명</h2>
                 <div className="mb-4">
                     <p className="mb-3">
@@ -113,6 +113,13 @@ export default function ProjectB() {
                     >
                         Youtube <strong>→</strong>
                     </Link>
+                </div>
+            </div>
+
+            <div>
+                <h2 className="text-xl font-bold mb-2">⏳ 개발 기간</h2>
+                <div className="mb-4">
+                    <i>2023.07 - 2023.09</i>
                 </div>
             </div>
 

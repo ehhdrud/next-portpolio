@@ -22,11 +22,15 @@ export default function ProjectC() {
 
     return (
         <div className="project flex flex-col gap-10">
-            <div>
+            <div className="mb-2">
                 <h2 className="text-xl font-bold mb-2 mt-10">⭐ 프로젝트 설명</h2>
-                <p className="mb-4">
+                <p className="mb-2">
                     Web2와 Web3에서 AI tool를 활용한 그림을 판매하는 사업인 D3sign DAO Studio의 소개
                     사이트입니다.
+                </p>
+                <p className="mb-4">
+                    여려 AI 아티스트의 예술 작품을 볼 수 있고, 사용자의 메타마스크 계정을 조회하여
+                    연결된 네트워크의 주소와 자산을 확인할 수 있습니다.
                 </p>
                 <div>
                     <Link
@@ -47,6 +51,13 @@ export default function ProjectC() {
                     >
                         Youtube <strong>→</strong>
                     </Link>
+                </div>
+            </div>
+
+            <div>
+                <h2 className="text-xl font-bold mb-2">⏳ 개발 기간</h2>
+                <div className="mb-4">
+                    <i>2023.05 - 2023.07</i>
                 </div>
             </div>
 
