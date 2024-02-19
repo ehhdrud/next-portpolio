@@ -7,7 +7,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 export default function ProjectC() {
     const details = [
-        '이미지 최적화, 코드 분할을 통한 지연 로딩, 메모이제이션, Total Blocking Time 요소 제거 등을 통해 통해 초기 로딩 속도를 개선하였습니다. 그 결과, 5초대(5155ms)의 로딩 속도를 1초대 미만(600ms)으로 개선하였고, PageSpeed Insights의 렌더링 점수를 50~60점대에서 95~100점대로 향상시켰습니다.',
+        '이미지 최적화, 코드 분할을 통한 지연 로딩, 메모이제이션, Total Blocking Time에 영향을 주는 요소 제거 등을 통해 통해 초기 로딩 속도를 개선하였습니다. 그 결과, 5초대(5155ms)의 로딩 속도를 1초대 미만(600ms)으로 개선하였고, PageSpeed Insights의 렌더링 점수를 50~60점대에서 95~100점대로 향상시켰습니다.',
         'react-helmet-async, react-snap 라이브러리를 활용하여 CSR의 검색 엔진 최적화 약점을 보완하였습니다.',
         'Ethers 객체를 통해 사용자의 MetaMask 계정을 조회하여 현재 연결된 네트워크의 주소와 자산을 확인할 수 있는 기능을 추가하였습니다.',
         'JavaScript, CSS를 최대한 활용하여 여러 동적 효과를 가진 반응형 UI를 표현하였습니다.',
