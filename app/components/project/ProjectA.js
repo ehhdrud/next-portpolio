@@ -6,7 +6,7 @@ import ImgBox from './ImgBox';
 
 export default function ProjectA() {
     const details = [
-        'Next.js의 SSR 방식을 통해 초기 로딩 속도와 검색 엔진 최적화 문제 해결하고, 메모이제이션 기술을 적용하여 렌더링 성능을 추가 개선하였습니다. (PageSpeeds Insights의 성능 점수 4개 항목 모두 100점)',
+        'Next.js의 SSR 방식을 첫 페이지에만 적용하고 나머지 페이지는 SPA로 개발하여 SSR과 CSR의 장점을 모두 취했습니다. 또한 메모이제이션 기술을 적용하고 lighthouse의 권장 사항을 준수하며 렌더링 성능을 추가 개선하였습니다. (PageSpeeds Insights의 성능 점수 4개 항목 모두 100점)',
         'Firebase Auth를 통한 Google, Email에 대한 로그인을 구현하였습니다. 사용자 인스턴스의 지속성을 Session으로 설정하여 브라우저 종료 시 권한이 사라지도록 하였습니다. 사용자 정보 데이터는 Recoil에 저장하여 여러 컴포넌트에서 접근하기 용이하도록 하였고, 마찬가지로 recoil-persist를 통해 Session storage에 저장함으로써 새로고침 시에도 데이터가 유지되면서 사용자 인스턴스와 동일한 생명주기를 갖도록 하였습니다.',
         '운동 데이터 CRUD를 위한 데이터베이스로 Realtime Database와 Cloud Firestore를 고민하였습니다. 작은 문서로 이루어진 대규모 컬렉션을 저장하는데 최적화되어 있고, 전체 데이터에서 하위값을 제외한 상위값만을 받아올 수 있는 Cloud Firestore를 선택하였습니다. 이는 여러 사용자의 운동 데이터를 저장하기에 적합하였고 Log 데이터를 제외한 Routine 데이터만을 불러올 때 유리하였습니다.',
         'Web Worker를 통해 타이머가 Main thread가 아닌 Worker thread에서 동작하도록 구현하여 운동 중 다른 탭으로 이동하거나 브라우저를 백그라운드 상태에 두더라도 타이머가 계속 동작하도록 UX를 개선하였습니다.',
